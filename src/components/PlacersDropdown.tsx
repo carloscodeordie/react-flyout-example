@@ -17,7 +17,7 @@ const PlacersDropdown = ({ header, items }: PlacersDropdownProps) => {
     <div className="placers-dropdown-container">
       <button className="button" onClick={handleOpen}>
         <PlacersLogo fillColor="#FFF" width={24} />
-        <span className="text">{header}</span>
+        <span className="button-text">{header}</span>
       </button>
       {open ? (
         <PlacersDropdownMenu

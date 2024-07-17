@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Uni Neue";
-  src: url("./assets/UniNeue.otf") format("otf");
+  src: url("./assets/UniNeue.woff");
 }
 
 /* PlacersDropdown Styles */
@@ -22,8 +22,9 @@
   width: 100%;
 }
 
-.placers-dropdown-container .text {
+.placers-dropdown-container .button-text {
   color: #e6e6e7;
+  font-family: "Uni Neue";
   font-feature-settings: "clig" off, "liga" off;
   font-size: 13px;
   font-style: normal;
@@ -48,7 +49,7 @@
   display: inline-flex;
   flex-direction: column;
   position: relative;
-  right: 29%;
+  right: 30%;
   top: 10px;
   width: 390px;
 }
@@ -75,7 +76,7 @@
 
 .placers-dropdown-menu > .container > .header > .header-title {
   color: #0c0c0c;
-  font-family: "Arial";
+  font-family: "Uni Neue";
   font-feature-settings: "clig" off, "liga" off;
   font-size: 16px;
   font-style: normal;
@@ -94,7 +95,7 @@
 .placers-dropdown-menu > .container > .points-header > p {
   color: #535357;
   display: inline-block;
-  font-family: "Arial";
+  font-family: "Uni Neue";
   font-feature-settings: "clig" off, "liga" off;
   font-size: 12px;
   font-style: normal;
@@ -152,7 +153,7 @@
 .placers-dropdown-menu-item > .position > span {
   color: #0c0c0c;
   display: inline-block;
-  font-family: "Arial";
+  font-family: "Uni Neue";
   font-feature-settings: "clig" off, "liga" off;
   font-size: 14px;
   font-style: normal;
@@ -171,7 +172,7 @@
 
 .placers-dropdown-menu-item > .details > h4 {
   color: #0c0c0c;
-  font-family: "Arial";
+  font-family: "Uni Neue";
   font-feature-settings: "clig" off, "liga" off;
   font-size: 16px;
   font-style: normal;
@@ -183,7 +184,7 @@
 
 .placers-dropdown-menu-item > .details > caption {
   color: #535357;
-  font-family: "Arial";
+  font-family: "Uni Neue";
   font-feature-settings: "clig" off, "liga" off;
   font-size: 12px;
   font-style: normal;
@@ -203,7 +204,7 @@
 .placers-dropdown-menu-item > .points > span {
   color: #0c0c0c;
   display: inline-block;
-  font-family: "Arial";
+  font-family: "Uni Neue";
   font-feature-settings: "clig" off, "liga" off;
   font-size: 14px;
   font-style: normal;

@@ -19,7 +19,7 @@ const PlacersDropdownMenu = ({
         </div>
         {displayPointsHeader ? (
           <div className="points-header">
-            <p className="position">#</p>
+            <p className="position">&#35;</p>
             <p className="name">name</p>
             <p className="points">pt</p>
             <p className="points">w</p>
