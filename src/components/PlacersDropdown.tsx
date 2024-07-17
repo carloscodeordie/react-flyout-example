@@ -13,9 +13,11 @@ const PlacersDropdown = ({ header, items }: PlacersDropdownProps) => {
     setOpen(false);
   };
 
+  const buttonClasses = open ? "button open" : "button";
+
   return (
     <div className="placers-dropdown-container">
-      <button className="button" onClick={handleOpen}>
+      <button className={buttonClasses} onClick={handleOpen}>
         <PlacersLogo fillColor="#FFF" width={24} />
         <span className="button-text">{header}</span>
       </button>
@@ -24,7 +26,7 @@ const PlacersDropdown = ({ header, items }: PlacersDropdownProps) => {
           header={header}
           items={items}
           onClose={handleClose}
-          displayPointsHeader={true}
+          displayPoints={false}
         />
       ) : null}
     </div>

@@ -4,7 +4,7 @@ interface PlacersDropdownMenuProps {
   header: string;
   items: PlacerItem[];
   onClose: () => void;
-  displayPointsHeader: boolean;
+  displayPoints: boolean;
 }
 
 export default PlacersDropdownMenuProps;

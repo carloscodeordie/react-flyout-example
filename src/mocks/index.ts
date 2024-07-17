@@ -3,7 +3,7 @@ import { PlacerItem } from "../interfaces";
 export const MockPlacerItems: PlacerItem[] = [
   {
     caption: "CMM (Canon-McMillan)",
-    name: "Beau Bartlett",
+    name: "Beau Bartlett",
     position: 1,
     points: {
       points: 100,

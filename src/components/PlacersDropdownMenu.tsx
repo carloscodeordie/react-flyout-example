@@ -5,7 +5,7 @@ const PlacersDropdownMenu = ({
   header,
   items,
   onClose,
-  displayPointsHeader,
+  displayPoints,
 }: PlacersDropdownMenuProps) => {
   return (
     <div className="placers-dropdown-menu">
@@ -17,7 +17,7 @@ const PlacersDropdownMenu = ({
             <CloseLogo fillColor="#535357" width={20} />
           </div>
         </div>
-        {displayPointsHeader ? (
+        {displayPoints ? (
           <div className="points-header">
             <p className="position">&#35;</p>
             <p className="name">name</p>
@@ -29,7 +29,12 @@ const PlacersDropdownMenu = ({
 
         <div className="details">
           {items
-            ? items.map((item) => <PlacersDropdownMenuItem item={item} />)
+            ? items.map((item) => (
+                <PlacersDropdownMenuItem
+                  item={item}
+                  displayPoints={displayPoints}
+                />
+              ))
             : null}
         </div>
       </div>

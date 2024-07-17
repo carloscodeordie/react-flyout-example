@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Uni Neue";
-  src: url("./assets/UniNeue.woff");
+  src: url("./assets/UniNeue.woff") format("woff");
 }
 
 /* PlacersDropdown Styles */
@@ -11,7 +11,7 @@
 
 .placers-dropdown-container .button {
   align-items: center;
-  background: #323236;
+  background: #0c0c0c;
   border-radius: 4px;
   cursor: pointer;
   display: flex;
@@ -20,6 +20,10 @@
   justify-content: center;
   padding: 8px 12px;
   width: 100%;
+}
+
+.placers-dropdown-container .button.open {
+  background: #323236;
 }
 
 .placers-dropdown-container .button-text {

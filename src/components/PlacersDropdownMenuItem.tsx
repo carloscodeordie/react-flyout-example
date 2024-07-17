@@ -2,7 +2,10 @@ import { PlacersDropdownMenuItemProps } from "../interfaces";
 import PlacersLogo from "./PlacersLogo";
 import { calculateOrdinal } from "../utils/placers-utils";
 
-const PlacersDropdownMenuItem = ({ item }: PlacersDropdownMenuItemProps) => {
+const PlacersDropdownMenuItem = ({
+  item,
+  displayPoints,
+}: PlacersDropdownMenuItemProps) => {
   return (
     <div className="placers-dropdown-menu-item">
       <div className="position">
@@ -13,7 +16,7 @@ const PlacersDropdownMenuItem = ({ item }: PlacersDropdownMenuItemProps) => {
         <h4>{item.name}</h4>
         <caption>{item.caption}</caption>
       </div>
-      {item.points ? (
+      {displayPoints ? (
         <div className="points">
           <span>{item.points?.points}</span>
           <span>{item.points?.wins}</span>
