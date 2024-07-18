@@ -4,7 +4,7 @@ import { MockPlacerItems } from "./mocks";
 function App() {
   return (
     <>
-      <PlacersDropdown header="PLACERS" items={MockPlacerItems} />
+      <PlacersDropdown header="placers" items={MockPlacerItems} />
     </>
   );
 }

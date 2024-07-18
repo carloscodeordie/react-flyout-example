@@ -14,19 +14,20 @@ const PlacersDropdown = ({ header, items }: PlacersDropdownProps) => {
   };
 
   const buttonClasses = open ? "button open" : "button";
+  const buttonIconColor = open ? "#e6e6e7" : "#afafb1";
 
   return (
     <div className="placers-dropdown-container">
       <button className={buttonClasses} onClick={handleOpen}>
-        <PlacersLogo fillColor="#FFF" width={24} />
-        <span className="button-text">{header}</span>
+        <PlacersLogo fillColor={buttonIconColor} width={24} />
+        <span>{header}</span>
       </button>
       {open ? (
         <PlacersDropdownMenu
           header={header}
           items={items}
           onClose={handleClose}
-          displayPoints={false}
+          displayPoints={true}
         />
       ) : null}
     </div>
