@@ -1,6 +1,5 @@
 import { PlacersDropdownMenuItemProps } from "../interfaces";
 import PlacersLogo from "./PlacersLogo";
-import { calculateOrdinal } from "../utils/placers-utils";
 
 const PlacersDropdownMenuItem = ({
   item,
@@ -10,7 +9,7 @@ const PlacersDropdownMenuItem = ({
     <div className="placers-dropdown-menu-item">
       <div className="position">
         <PlacersLogo fillColor={"#0c0c0c"} width={24} />
-        <span>{calculateOrdinal(item.position)}</span>
+        <span>{item.position}</span>
       </div>
       <div className="details">
         <h4>{item.name}</h4>

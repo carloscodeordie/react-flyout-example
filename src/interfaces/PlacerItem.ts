@@ -2,7 +2,7 @@ import PlacerItemPoints from "./PlacerItemPoints";
 
 interface PlacerItem {
   name: string;
-  position: number;
+  position: string;
   caption: string;
   points?: PlacerItemPoints;
 }

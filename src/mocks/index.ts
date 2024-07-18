@@ -4,7 +4,7 @@ export const MockPlacerItems: PlacerItem[] = [
   {
     caption: "CMM (Canon-McMillan)",
     name: "Beau Bartlett",
-    position: 1,
+    position: "1st",
     points: {
       points: 100,
       wins: 8,
@@ -14,7 +14,7 @@ export const MockPlacerItems: PlacerItem[] = [
   {
     caption: "CML (Consejo Mundial de Lucha Libre)",
     name: "Huracan Ramirez",
-    position: 2,
+    position: "2nd",
     points: {
       points: 100,
       wins: 7,
@@ -24,7 +24,7 @@ export const MockPlacerItems: PlacerItem[] = [
   {
     caption: "GOT (Gotham)",
     name: "Bruce Wayne",
-    position: 3,
+    position: "3rd",
     points: {
       points: 100,
       wins: 6,
@@ -34,7 +34,7 @@ export const MockPlacerItems: PlacerItem[] = [
   {
     caption: "WIMD (Where is my dog?)",
     name: "John Wick",
-    position: 4,
+    position: "4th",
     points: {
       points: 100,
       wins: 5,
