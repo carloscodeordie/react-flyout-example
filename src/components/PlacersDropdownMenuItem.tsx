@@ -5,18 +5,21 @@ const PlacersDropdownMenuItem = ({
   item,
   displayPoints,
 }: PlacersDropdownMenuItemProps) => {
+  const logoFillColor = "#0c0c0c";
+  const logoWidth = 24;
+
   return (
-    <div className="placers-dropdown-menu-item">
+    <div data-testid="menu-item" className="placers-dropdown-menu-item">
       <div className="position">
-        <PlacersLogo fillColor={"#0c0c0c"} width={24} />
+        <PlacersLogo fillColor={logoFillColor} width={logoWidth} />
         <span>{item.position}</span>
       </div>
       <div className="details">
         <h4>{item.name}</h4>
-        <caption>{item.caption}</caption>
+        <span>{item.caption}</span>
       </div>
       {displayPoints ? (
-        <div className="points">
+        <div className="points" data-testid="points">
           <span>{item.points?.points}</span>
           <span>{item.points?.wins}</span>
           <span>{item.points?.loses}</span>

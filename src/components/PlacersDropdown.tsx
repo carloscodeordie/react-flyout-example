@@ -18,17 +18,23 @@ const PlacersDropdown = ({ header, items }: PlacersDropdownProps) => {
 
   return (
     <div className="placers-dropdown-container">
-      <button className={buttonClasses} onClick={handleOpen}>
+      <button
+        data-testid="dropdown-button"
+        className={buttonClasses}
+        onClick={handleOpen}
+      >
         <PlacersLogo fillColor={buttonIconColor} width={24} />
-        <span>{header}</span>
+        <span data-testid="dropdown-title">{header}</span>
       </button>
       {open ? (
-        <PlacersDropdownMenu
-          header={header}
-          items={items}
-          onClose={handleClose}
-          displayPoints={true}
-        />
+        <div data-testid="dropdown-menu">
+          <PlacersDropdownMenu
+            header={header}
+            items={items}
+            onClose={handleClose}
+            displayPoints={true}
+          />
+        </div>
       ) : null}
     </div>
   );

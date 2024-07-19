@@ -3,6 +3,7 @@ import { LogoProps } from "../interfaces";
 export default function PlacersLogo({ fillColor, width }: LogoProps) {
   return (
     <svg
+      data-testid="placers-logo"
       fill={fillColor}
       height={width}
       viewBox={`0 0 ${width} ${width}`}

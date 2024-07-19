@@ -8,17 +8,23 @@ const PlacersDropdownMenu = ({
   displayPoints,
 }: PlacersDropdownMenuProps) => {
   return (
-    <div className="placers-dropdown-menu">
+    <div data-testid="placers-dropdown-menu" className="placers-dropdown-menu">
       <div className="container">
         <div className="header">
           <div className="header-button"></div>
-          <div className="header-title">{header}</div>
-          <div className="header-button" onClick={onClose}>
+          <div data-testid="title" className="header-title">
+            {header}
+          </div>
+          <div
+            data-testid="close-button"
+            className="header-button"
+            onClick={onClose}
+          >
             <CloseLogo fillColor="#535357" width={20} />
           </div>
         </div>
         {displayPoints ? (
-          <div className="points-header">
+          <div data-testid="points-header" className="points-header">
             <p className="position">&#35;</p>
             <p className="name">name</p>
             <p className="points">pt</p>
@@ -27,10 +33,11 @@ const PlacersDropdownMenu = ({
           </div>
         ) : null}
 
-        <div className="details">
+        <div data-testid="details" className="details">
           {items
-            ? items.map((item) => (
+            ? items.map((item, key) => (
                 <PlacersDropdownMenuItem
+                  key={key}
                   item={item}
                   displayPoints={displayPoints}
                 />

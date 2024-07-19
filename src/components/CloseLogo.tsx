@@ -3,6 +3,7 @@ import { LogoProps } from "../interfaces";
 export default function CloseLogo({ fillColor, width }: LogoProps) {
   return (
     <svg
+      data-testid="close-logo"
       fill={fillColor}
       height={width}
       viewBox={`0 0 ${width} ${width}`}
