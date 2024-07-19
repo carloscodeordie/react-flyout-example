@@ -1,6 +1,6 @@
-import { PlacersDropdown } from ".";
-import { MockPlacerItems } from "../mocks";
 import { fireEvent, render, screen } from "@testing-library/react";
+import { PlacersDropdown } from "../components";
+import { MockPlacerItems } from "../mocks";
 
 describe(PlacersDropdown.name, () => {
   it("should render correctly", () => {

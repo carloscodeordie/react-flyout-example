@@ -1,5 +1,5 @@
-import PlacersLogo from "./PlacersLogo";
 import { render } from "@testing-library/react";
+import { PlacersLogo } from "../components";
 
 const fillColor = "#000";
 const width = 20;

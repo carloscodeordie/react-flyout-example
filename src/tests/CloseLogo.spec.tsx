@@ -1,5 +1,6 @@
-import CloseLogo from "./CloseLogo";
+CloseLogo;
 import { render } from "@testing-library/react";
+import { CloseLogo } from "../components";
 
 const fillColor = "#000";
 const width = 20;

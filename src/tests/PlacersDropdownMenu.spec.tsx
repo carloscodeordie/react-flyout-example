@@ -1,6 +1,6 @@
-import { MockPlacerItems } from "../mocks";
-import PlacersDropdownMenu from "./PlacersDropdownMenu";
 import { fireEvent, render, screen } from "@testing-library/react";
+import { PlacersDropdownMenu } from "../components";
+import { MockPlacerItems } from "../mocks";
 
 describe(PlacersDropdownMenu.name, () => {
   const onClose = jest.fn();
