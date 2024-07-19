@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { PlacersLogo } from "../components";
+import { PlacersLogo } from "../assets/svg";
 
 const fillColor = "#000";
 const width = 20;

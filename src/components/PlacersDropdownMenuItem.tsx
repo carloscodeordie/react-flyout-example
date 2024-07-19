@@ -1,5 +1,5 @@
+import { PlacersLogo } from "../assets/svg";
 import { PlacersDropdownMenuItemProps } from "../interfaces";
-import PlacersLogo from "./PlacersLogo";
 
 const PlacersDropdownMenuItem = ({
   item,

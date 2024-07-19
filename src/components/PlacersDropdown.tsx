@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { PlacersLogo, PlacersDropdownMenu } from "../components";
+import { PlacersDropdownMenu } from "../components";
 import { PlacersDropdownProps } from "../interfaces";
+import { PlacersLogo } from "../assets/svg";
 
 const PlacersDropdown = ({ header, items }: PlacersDropdownProps) => {
   const [open, setOpen] = useState(false);

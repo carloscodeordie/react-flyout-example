@@ -1,5 +1,6 @@
 import { PlacersDropdownMenuProps } from "../interfaces";
-import { CloseLogo, PlacersDropdownMenuItem } from "../components";
+import { PlacersDropdownMenuItem } from "../components";
+import { CloseLogo } from "../assets/svg";
 
 const PlacersDropdownMenu = ({
   header,

@@ -1,6 +1,5 @@
-CloseLogo;
 import { render } from "@testing-library/react";
-import { CloseLogo } from "../components";
+import { CloseLogo } from "../assets/svg";
 
 const fillColor = "#000";
 const width = 20;
