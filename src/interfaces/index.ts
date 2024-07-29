@@ -1,3 +1,5 @@
+import { LinkModel } from "@flocasts/experience-service-types";
+
 export interface LogoProps {
   fillColor: string;
   width: number;
@@ -10,7 +12,7 @@ export interface PlacerItemPoints {
 }
 
 export interface PlacerItem {
-  name: string;
+  name: LinkModel;
   position: string;
   caption: string;
   points?: PlacerItemPoints;

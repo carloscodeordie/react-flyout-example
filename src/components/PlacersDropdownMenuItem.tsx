@@ -15,7 +15,7 @@ const PlacersDropdownMenuItem = ({
         <span>{item.position}</span>
       </div>
       <div className="details">
-        <h4>{item.name}</h4>
+        <h4>{item.name.title}</h4>
         <span>{item.caption}</span>
       </div>
       {displayPoints ? (

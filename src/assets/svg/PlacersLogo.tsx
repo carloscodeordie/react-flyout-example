@@ -1,4 +1,4 @@
-import { LogoProps } from "../interfaces";
+import { LogoProps } from "../../interfaces/index";
 
 export default function PlacersLogo({ fillColor, width }: LogoProps) {
   return (
